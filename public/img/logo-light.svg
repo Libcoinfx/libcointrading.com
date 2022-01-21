@@ -1,9 +1,1 @@
-<svg width="858" height="290" viewBox="0 0 858 290" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M170.328 187.369H119.189V238.508H170.328V187.369Z" fill="#7CE8FE"/>
-<path d="M205.645 119.185H119.189V170.324H205.645H221.466V119.185H205.645Z" fill="#3EC7E3"/>
-<path d="M272.604 51H119.189V102.138H272.604V51Z" fill="#00A2C7"/>
-<path d="M102.138 119.186H51V170.324H102.138V119.186Z" fill="#dc3545"/>
-<path d="M323.727 238.52H363.373V161.058H439.645V128.37H363.373V83.6878H447.885V51H323.727V238.52Z" fill="white"/>
-<path d="M467.411 83.6878H524.821V238.52H564.009V83.6878H621.419V51H467.411V83.6878Z" fill="white"/>
-<path d="M683.956 51H638.999L696.592 144.76L637.9 238.52H683.315L721.772 174.518H723.237L761.693 238.52H807.291L748.783 144.76L806.009 51H761.235L723.237 114.911H721.772L683.956 51Z" fill="white"/>
-</svg>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 239 78"><defs><style>.cls-1,.cls-3{fill:#51894a;}.cls-2{fill:#f4f4f4;}.cls-3,.cls-4{font-size:46.74px;font-family:FranklinGothic-HeavyItalic, Franklin Gothic Heavy;font-weight:800;font-style:italic;}.cls-4{fill:#fff;}</style></defs><polygon class="cls-1" points="30.58 0 22.64 10.45 0 24.19 0 55.55 26.52 70.06 28.13 54.39 20.13 57.48 22.64 40.65 13.16 43.94 30.58 0"/><polygon class="cls-2" points="26.9 78 35.42 67.36 55.94 55.74 55.94 23.81 30.58 9.1 28.13 27.68 35.81 24.97 33.87 41.42 42.58 38.52 26.9 78"/><text class="cls-3" transform="translate(61.9 50.75)">LIB</text><text class="cls-4" transform="translate(130.66 50.75)">COIN</text></svg>
