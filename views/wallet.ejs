@@ -287,7 +287,9 @@
                                                         <button type="button" class="btn green btn-md"
                                                             data-bs-toggle="modal"
                                                             data-bs-target="#deposit">Deposit</button>
-                                                        <button type="button" class="btn red btn-md">Withdraw</button>
+                                                        <button type="button" class="btn red btn-md"
+                                                            data-bs-toggle="modal"
+                                                            data-bs-target="#withdraw">Withdraw</button>
                                                     </div>
                                                 </div>
                                                 <div class="card">
@@ -310,7 +312,8 @@
                                                                             data-bs-toggle="tooltip"
                                                                             data-bs-placement="top"
                                                                             title="copy address"><i
-                                                                                class="icon ion-md-copy mr-2"></i>Copy address</button>
+                                                                                class="icon ion-md-copy mr-2"></i>Copy
+                                                                            address</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -433,6 +436,25 @@
         </div>
     </div>
 
+
+    <!-- Modal -->
+    <div class="modal fade" id="withdraw" tabindex="-1" aria-labelledby="withdrawLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="withdrawLabel">Enter Amount to withdraw</h5>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- Bitcoin Modal -->
     <div class="modal fade" id="bitcoin" tabindex="-1" aria-labelledby="bitcoinLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -463,8 +485,9 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-toggle="modal"
                         data-bs-target="#deposit">Back</button>
-                    <button type="button" class="btn btn-primary js-copy" data-bs-toggle="tooltip" data-bs-placement="top"
-                        title="copy address"><i class="icon ion-md-copy mr-2"></i>Copy address</button>
+                    <button type="button" class="btn btn-primary js-copy" data-bs-toggle="tooltip"
+                        data-bs-placement="top" title="copy address"><i class="icon ion-md-copy mr-2"></i>Copy
+                        address</button>
                 </div>
             </div>
         </div>
