@@ -445,10 +445,23 @@
                     <h5 class="modal-title" id="withdrawLabel">Enter Amount to withdraw</h5>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">$</span>
+                        <span class="input-group-text">0.00</span>
+                        <input type="text" class="form-control"
+                            aria-label="Dollar amount (with dot and two decimal places)">
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" class="form-control"
+                            aria-label="Dollar amount (with dot and two decimal places)">
+                        <span class="input-group-text">$</span>
+                        <span class="input-group-text">0.00</span>
+                    </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button onclick="withdraw()" type="button"
+                        class="btn btn-secondary" data-bs-dismiss="modal">Next</button>
                 </div>
             </div>
         </div>
@@ -493,8 +506,44 @@
         </div>
     </div>
 
-
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
+        function withdraw() {
+            const swalWithBootstrapButtons = Swal.mixin({
+                customClass: {
+                    confirmButton: 'btn btn-success',
+                    cancelButton: 'btn btn-danger'
+                },
+                buttonsStyling: false
+            })
+
+            swalWithBootstrapButtons.fire({
+                title: 'Are you sure?',
+                text: "You won't be able to revert this!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonText: 'Yes, continue!',
+                cancelButtonText: 'No, cancel!',
+                reverseButtons: true
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    swalWithBootstrapButtons.fire(
+                        'Request pending!',
+                        'Your withdrawl is pending contact an admin.',
+                        'info'
+                    )
+                } else if (
+                    /* Read more about handling dismissals below */
+                    result.dismiss === Swal.DismissReason.cancel
+                ) {
+                    swalWithBootstrapButtons.fire(
+                        'Cancelled',
+                        'Your withdrawl is cancled :)',
+                        'error'
+                    )
+                }
+            })
+        }
         (function () {
 
             var area = document.createElement('textarea');
@@ -519,7 +568,7 @@
                     var t = this;
                     t.innerHTML = `<i class="icon ion-md-checkmark mr-2" ></i >Copied`;
                     setTimeout(function () {
-                        t.innerHTML = `<i class="icon ion-md-copy mr-2"></i >Copy address`
+                        t.innerHTML = `<i class="icon ion-md-copy mr-2"></i >Copy`
                     }, 2500);
                 });
             }
