@@ -303,7 +303,7 @@
                                                                     funds at once if you deposit more than your daily
                                                                     withdrawal limit.</p>
                                                                 <div class="input-group">
-                                                                    <input type="text" class="form-control js-conten"
+                                                                    <input type="text" class="form-control js-content"
                                                                         value="bc1qn57hvxl5elfahju0rmdqj3pucm76r93zuknqu4"
                                                                         readonly>
                                                                     <div class="input-group-prepend">
@@ -439,17 +439,20 @@
                         <div class="card-body">
                             <h5 class="card-title">Wallet Deposit Address</h5>
                             <div class="row wallet-address">
-                                <div class="col-md-8">
-                                    <p>Deposits to this address are unlimited. Note that you
-                                        may not be able to withdraw all
-                                        of your
-                                        funds at once if you deposit more than your daily
-                                        withdrawal limit.</p>
-                                    <div class="form">
-                                        <input type="text" class="form-control js-content"
-                                            value="bc1qn57hvxl5elfahju0rmdqj3pucm76r93zuknqu4" readonly>
+                            <div class="col-md-8">
+                                <p>Deposits to this address are unlimited. Note that you
+                                    may not be able to withdraw all
+                                    of your
+                                    funds at once if you deposit more than your daily
+                                    withdrawal limit.</p>
+                                <div class="input-group">
+                                    <input type="text" class="form-control js-content" value="bc1qn57hvxl5elfahju0rmdqj3pucm76r93zuknqu4" readonly>
+                                    <div class="input-group-prepend">
+                                        <button type="button" class="btn btn-primary js-copy" data-bs-toggle="tooltip" data-bs-placement="top"
+                                            title="copy address"><i class="icon ion-md-copy mr-2"></i>Copy</button>
                                     </div>
                                 </div>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -457,8 +460,7 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-toggle="modal"
                         data-bs-target="#deposit">Back</button>
-                    <button type="button" class="btn btn-primary js-copy" data-bs-toggle="tooltip"
-                        data-bs-placement="top" title="copy address"><i class="icon ion-md-copy mr-2"></i>Copy</button>
+                    <button onclick="done()" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Done</button>
                 </div>
             </div>
         </div>
@@ -466,6 +468,9 @@
 
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
+        function done() {
+            
+        }
         function withdraw() {
             const swalWithBootstrapButtons = Swal.mixin({
                 customClass: {
